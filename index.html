@@ -1,147 +1,52 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Elegan</title>
-    <style>
-        /* Gaya CSS dengan warna navy dan nude kecoklatan */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f3e5d8; /* nude kecoklatan */
-        }
-        header {
-            background-color: #001f3f; /* navy */
-            color: #f3e5d8; /* nude kecoklatan */
-            padding: 15px;
-            text-align: center;
-        }
-        nav {
-            background-color: #f3e5d8; /* nude kecoklatan */
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #001f3f; /* navy */
-            font-weight: bold;
-        }
-        main {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            background-color: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #001f3f; /* navy */
-        }
-        footer {
-            background-color: #001f3f; /* navy */
-            color: #ffffff; /* putih */
-            text-align: center;
-            padding: 10px;
-            position: relative; /* Ubah dari fixed ke relative */
-            bottom: 0;
-            width: 100%;
-        }
-        footer p {
-            color: #ffffff; /* memastikan warna teks footer adalah putih */
-            margin: 0; /* menghapus margin agar lebih rapi */
-        }
-        .project-card {
-            background-color: #f3e5d8; /* nude kecoklatan */
-            border: 1px solid #001f3f; /* navy */
-            border-radius: 5px;
-            padding: 15px;
-            margin: 15px 0;
-            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-        }
-        .project-title {
-            color: #001f3f; /* navy */
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-        .project-description {
-            color: #333333; /* abu-abu gelap untuk teks biasa */
-            margin: 10px 0;
-        }
-        .view-project {
-            background-color: #001f3f; /* navy */
-            color: white; /* putih */
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-        }
-        .view-project:hover {
-            background-color: #003366; /* warna navy lebih terang saat hover */
-        }
-        /* Menambahkan margin bawah pada bagian kontak */
-        #contact {
-            margin-bottom: 50px; /* Jarak bawah yang cukup agar tidak terlalu mepet footer */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Sallima Sylvie Septianita</title>
+  <link rel="stylesheet" href="CSS_portfolio.css">
 </head>
 <body>
+  <header>
+    <h1>Hi, I’m Sallima Sylvie Septianita</h1>
+    <p>I’m a Physics graduate with a passion for data and technology.</p>
+  </header>
 
-    <header>
-        <h1>Selamat Datang di Website Elegan</h1>
-    </header>
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="your-photo.jpg" alt="Photo of Sallima Sylvie Septianita">
+      <p>I’m Salma, a Physics graduate from Universitas Brawijaya. During my studies, I focused on computational physics, where I worked on various projects involving programming and modeling. Recently, I have developed a strong interest in data and am currently deepening my knowledge while building new projects. Here are some of the projects.</p>
+    </div>
+  </section>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Program Jadwal Sholat</h3>
+      <p>A program designed to calculate prayer times for various regions in Indonesia, using data such as the sun's position, geographical location, and other relevant factors to ensure accurate results.</p>
+      <a href="https://github.com/link-to-your-project" class="view-btn">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>CT Simulator</h3>
+      <p>A first-generation CT scan simulator with a modified data acquisition system that applies linear interpolation to optimize dose efficiency.</p>
+      <a href="https://github.com/link-to-your-project" class="view-btn">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>Titanic: Who Survived?</h3>
+      <p>A project aimed at predicting the likelihood of passenger survival in the Titanic disaster based on specific criteria and data analysis.</p>
+      <a href="https://github.com/link-to-your-project" class="view-btn">View Project</a>
+    </div>
+  </section>
 
-    <main>
-        <section id="home">
-            <h2>Hi, I’m Sallima Sylvie Septianita</h2>
-            <p>I’m a Physics graduate with a passion for data and technology.</p>
-        </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:septianita165@gmail.com">septianita165@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/sallima-sylvie-septianita" target="_blank">Sallima Sylvie Septianita</a></p>
+  </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I’m Salma, a Physics graduate from Universitas Brawijaya. During my studies, I focused on computational physics, where I worked on various projects involving programming and modeling. Recently, I have developed a strong interest in data and am currently deepening my knowledge while building new projects. Here are some of the projects.</p>
-        </section>
-
-        <section id="projects">
-            <h2>Proyek</h2>
-
-            <div class="project-card">
-                <div class="project-title">Program Jadwal Sholat</div>
-                <div class="project-description">A program designed to calculate prayer times for various regions in Indonesia, using data such as the sun's position, geographical location, and other relevant factors to ensure accurate results.</div>
-                <a href="link_to_project_1" class="view-project">View Project</a>
-            </div>
-
-            <div class="project-card">
-                <div class="project-title">CT Simulator</div>
-                <div class="project-description">A first-generation CT scan simulator with a modified data acquisition system that applies linear interpolation to optimize dose efficiency.</div>
-                <a href="link_to_project_2" class="view-project">View Project</a>
-            </div>
-
-            <div class="project-card">
-                <div class="project-title">Titanic: Who Survived?</div>
-                <div class="project-description">A project aimed at predicting the likelihood of passenger survival in the Titanic disaster based on specific criteria and data analysis.</div>
-                <a href="link_to_project_3" class="view-project">View Project</a>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Kontak</h2>
-            <p>Email: <a href="mailto:septianita165@gmail.com">septianita165@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/sallima-sylvie-septianita" target="_blank">Sallima Sylvie Septianita</a></p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Salma. All rights reserved.</p>
-    </footer>
-
+  <footer>
+    <p>&copy; 2024 Sallima Sylvie Septianita</p>
+  </footer>
 </body>
 </html>
